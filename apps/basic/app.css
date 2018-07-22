@@ -21,7 +21,7 @@
         min-height: 6rem;
     }
 
-    .gplats {
+    .plats--page {
         grid-template-columns: 1fr;
         grid-template-areas:
             'l'
@@ -36,7 +36,7 @@
         height: 58rem;
     }
 
-    div.brand > img {
+    .home--card.brand > img {
         height: 8rem;
     }
 
@@ -53,7 +53,7 @@
         font-size: 1.4rem;
     }
 
-    .gplats {
+    .plats--page {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'l l'
@@ -65,12 +65,12 @@
     .home--page {
         grid-gap: 20px;
     }
-    .gmenu {
+    .nav--menu {
         align-items: center;
         justify-items: center;
         grid-template-columns: 50px repeat(auto-fit, minmax(150px, 1fr));
     }
-    .gmenu-item {
+    .nav--menu-item {
         display: inherit;
     }
 

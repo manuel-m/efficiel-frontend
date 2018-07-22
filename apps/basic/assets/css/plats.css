@@ -1,4 +1,4 @@
-.gplats {
+.plats--page {
     padding: var(--pad);
     display: grid;
     color: #fff;
@@ -7,12 +7,12 @@
     grid-template-rows: 6rem;
 }
 
-.gplats h4 {
+.plats--page h4 {
     text-align: center;
     color: #fff;
 }
 
-.gplats ul {
+.plats--page ul {
     font-size: 1rem;
 }
 

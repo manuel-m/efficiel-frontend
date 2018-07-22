@@ -31,7 +31,7 @@ ul {
     margin-bottom: var(--pad);
 }
 
-.gmenu {
+.nav--menu {
     font-size: 1.2rem;
     display: grid;
     grid-gap: 5px;
@@ -66,10 +66,10 @@ ul {
     margin: auto;
 }
 
-.gmenu-spacing {
+.nav--menu-spacing {
     margin-top: 3rem;
 }
 
-.gmenu-item {
+.nav--menu-item {
     display: none;
 }
