@@ -1,0 +1,132 @@
+@import '../../css/reset.css';
+@import './assets/css/base.css';
+@import './assets/css/home.css';
+@import './assets/css/plats.css';
+
+@media screen and (min-width: 321px) {
+    .home--page {
+        grid-gap: 10px;
+        height: 45rem;
+    }
+
+    .home--card > p {
+        font-size: 0.7rem;
+    }
+
+    .home--card > h4 {
+        font-size: 0.9rem;
+    }
+
+    .home--card.img {
+        min-height: 6rem;
+    }
+
+    .gplats {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'l'
+            'f'
+            'c';
+    }
+}
+
+@media screen and (min-width: 513px) {
+    .home--page {
+        grid-gap: 15px;
+        height: 58rem;
+    }
+
+    div.brand > img {
+        height: 8rem;
+    }
+
+    .home--card > p {
+        font-size: 0.8rem;
+        max-width: 15rem;
+    }
+
+    .home--card.img {
+        min-width: 16rem;
+    }
+
+    .home--card > h4 {
+        font-size: 1.4rem;
+    }
+
+    .gplats {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'l l'
+            'f c';
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .home--page {
+        grid-gap: 20px;
+    }
+    .gmenu {
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 50px repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .gmenu-item {
+        display: inherit;
+    }
+
+    .home--card > p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .home--page {
+        height: 45rem;
+        padding: var(--pad) 0 0 0;
+    }
+    .stick {
+        max-width: 1100px;
+    }
+
+    .home--card.img {
+        min-height: 16rem;
+    }
+
+    .home--card.txt {
+        min-height: 24rem;
+    }
+
+    .home--card > h4 {
+        font-size: 1.6rem;
+    }
+}
+
+.home--card.a {
+    grid-area: a;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('./assets/resto1.jpg');
+}
+
+.home--card.b {
+    grid-area: b;
+    background-image: url('./assets/resto2.jpg');
+}
+
+.home--card.c {
+    grid-area: c;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('./assets/cremecatalane.jpg');
+}
+
+.home--card.d {
+    grid-area: d;
+    background-image: url('./assets/tapas.jpg');
+}

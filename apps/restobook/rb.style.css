@@ -1,0 +1,112 @@
+:root {
+    --c1: #333;
+    --c2: #329eb6;
+    --c3: #777;
+    --c4: #46ccd7; /**/
+    --c5: #d8d8d8;
+    --c6: #eee;
+
+    --bs1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --bs2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --bs3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --bs4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --bs5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    --pad1: 0.7rem;
+}
+
+html,
+body,
+div,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: var(--c1);
+    text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.07);
+}
+
+body {
+    background-color: var(--c6);
+}
+
+.main {
+    padding: var(--pad1);
+}
+
+.gtc {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    margin-bottom: 50px;
+}
+
+[data-m^='a:'] {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--bs1);
+    border-radius: 6px;
+    font-weight: 800;
+    color: var(--c2);
+}
+[data-m^='a:']:hover {
+    box-shadow: var(--bs2);
+}
+
+[data-m^='a:'].selected {
+    box-shadow: var(--bs2);
+    background-color: var(--c4);
+    color: #fff;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header,
+.footer {
+    font-weight: 800;
+    padding: var(--pad1);
+    color: #fff;
+    background-color: var(--c2);
+}
+
+.header {
+    height: 1rem;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    color: #fff;
+    background-color: var(--c4);
+    box-shadow: var(--bs2);
+    padding: var(--pad1);
+}
+
+.filter.expanded {
+    height: 5rem;
+}
+
+.footer {
+    border-top: var(--c3) solid 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

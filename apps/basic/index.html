@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>La casita</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <div class="stick">
+                <div class="gmenu">
+                    <img src="assets/menu-button-of-three-horizontal-lines.svg" class="menu toggle">
+                    <div class="gmenu-item" data-nav="home">La Casita</div>
+                    <div class="gmenu-item" data-nav="plats">La carte</div>
+                    <div class="gmenu-item" data-nav="book">Réservation</div>
+                </div>
+            </div>
+
+            <div id="page-container" class="gmenu-spacing">
+
+                <!-- plats -->
+                <div data-page="plats">
+                    <div class="gplats">
+                        <div class="tapas-title">Tapas</div class="tapas-title">
+                        <div class="tapas-froides">
+                            <h4>Froides</h4>
+                            <ul>
+                                <li>Olives vertes, noires ou mixtes</li>
+                                <li>Feuilles de vigne</li>
+                                <li>Salade espagnole</li>
+                                <li>Fêta aux fines herbes/tomates</li>
+                                <li>Poulpe vinaigrette</li>
+                                <li>Jambon reserva supérieur</li>
+                                <li>Chorizo artisanal</li>
+                                <li>Jambon sec serrano</li>
+                                <li>Salade mixte</li>
+                                <li>Coeurs d'artichauts vinaigrette</li>
+                                <li>Queso manchego</li>
+                                <li>Anchois marinés</li>
+                                <li>Lomo artisanal</li>
+                                <li>Chorizo piquant</li>
+                                <li>Chorizo iberico supérieur</li>
+                                <li>Poivron rôtiss et marinés</li>
+                            </ul>
+                        </div>
+                        <div class="tapas-chaudes">
+                            <h4>Chaudes</h4>
+                            <ul>
+                                <li>Tortilla traditionnelle espagnole</li>
+                                <li>Champignons de paris à l'ail</li>
+                                <li>Courgettes grillées à la madrilène</li>
+                                <li>Gratin d'aubergines à l'andalouse</li>
+                                <li>Ailes de poulet à l'ail</li>
+                                <li>Boulettes de viande sauce tomate</li>
+                                <li>Moules espagnoles à l'ail</li>
+                                <li>Friture d'éperlans</li>
+                                <li>Calamars frits</li>
+                                <li>Patatas bravas à l’aïoli</li>
+                                <li>Empanadillas au thon</li>
+                                <li>Ailes de poulet à l'ail</li>
+                                <li>Pain à la navarra</li>
+                                <li>Aubergines grillées con queso</li>
+                                <li>Pain à la catalane</li>
+                                <li>Chorizo à la catalane</li>
+                                <li>Poulpe à la gallega</li>
+                                <li>Aubergines rôties</li>
+                                <li>Friture de crabe</li>
+                                <li>Patatas bravas sauce tomate</li>
+                                <li>Beignets de poulet sauce miel</li>
+                                <li>Croquettes de thon pannées</li>
+                                <li>Croquettes de poulet</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- book -->
+                <div data-page="book">book</div>
+
+                <!-- home -->
+                <div data-page="home" class="active">
+                    <div class="home--page">
+                        <div class="home--card brand">
+                            <img src="assets/casita.svg">
+                        </div>
+                        <div class="home--card a txt" data-nav="book">
+                            <h4>Réservation</h4>
+                            <p>Service du lundi au vendredi, de 12h à 14h.
+                                <br>Ouverture le soir du lundi au samedi, de 19h30 à 00h.
+                            </p>
+                        </div>
+                        <div class="home--card b img"></div>
+                        <div class="home--card c txt" data-nav="plats">
+                            <h4>La carte</h4>
+                            <p>Tapas chaudes ou froides à base d'ingrédient d'origine Espagnole</p>
+                            <p>Formule à partir de 12€</p>
+                        </div>
+                        <div class="home--card d img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">Site de démonstration</div>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+
+
+</body>
+
+
+</html>

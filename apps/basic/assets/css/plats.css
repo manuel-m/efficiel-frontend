@@ -1,0 +1,61 @@
+.gplats {
+    padding: var(--pad);
+    display: grid;
+    color: #fff;
+    grid-gap: 10px;
+    line-height: 1.6rem;
+    grid-template-rows: 6rem;
+}
+
+.gplats h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.gplats ul {
+    font-size: 1rem;
+}
+
+.tapas-title {
+    grid-area: l;
+    background-image: linear-gradient(
+            to top,
+            rgba(29, 19, 9, 0.7),
+            rgba(29, 19, 9, 0.7)
+        ),
+        url('../pan-con-tomate.jpg');
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: var(--c4);
+    font-size: 2.5rem;
+}
+
+.tapas-froides {
+    grid-area: f;
+    background-image: linear-gradient(
+            to top,
+            rgba(29, 19, 9, 0.8),
+            rgba(29, 19, 9, 0.8)
+        ),
+        url('../tapastall1.jpg');
+}
+
+.tapas-chaudes {
+    grid-area: c;
+    background-image: linear-gradient(
+            to top,
+            rgba(29, 19, 9, 0.8),
+            rgba(29, 19, 9, 0.8)
+        ),
+        url('../tapashott.jpg');
+}
+
+.tapas-froides,
+.tapas-chaudes {
+    padding: var(--pad);
+    border-radius: 3px;
+    color: var(--c5);
+    background-size: cover;
+}

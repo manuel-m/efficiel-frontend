@@ -1,0 +1,75 @@
+:root {
+    --c1: #333;
+    --c2: #fc7745;
+    --c3: #777;
+    --c4: #fcac45;
+    --c5: #d8d8d8;
+    --c6: #eee;
+
+    --pad: 0.7rem;
+}
+
+body {
+    background-color: var(--c6);
+}
+
+ul {
+    list-style: none;
+    padding-left: var(--pad);
+}
+
+.container {
+    width: 100%;
+    border: #333 dashed 2px;
+    height: 100vh;
+}
+
+.stick {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    margin-bottom: var(--pad);
+}
+
+.gmenu {
+    font-size: 1.2rem;
+    display: grid;
+    grid-gap: 5px;
+    background-color: var(--c2);
+    padding: var(--pad);
+    box-shadow: var(--bs1);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: #555;
+    text-align: right;
+    font-size: 0.6rem;
+}
+
+[data-page] {
+    display: none;
+}
+
+[data-page].active {
+    display: inherit;
+}
+
+.menu.toggle {
+    height: 1.5rem;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gmenu-spacing {
+    margin-top: 3rem;
+}
+
+.gmenu-item {
+    display: none;
+}

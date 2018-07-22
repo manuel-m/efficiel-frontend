@@ -1,0 +1,279 @@
+:root {
+    --white: #eee;
+    --grey: #888;
+    --black: #000000;
+
+    --primary: #fec0aa; /* melon */
+
+    --dark: #0c2116; /* eerie black */
+    --medium: #1c352d; /* medium jungle screen */
+    --light: #416d55; /* amazon */
+
+    --text: #3c4859;
+
+    --button-width: 165px;
+}
+
+html,
+body,
+div,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-family: 'Source Code Pro'; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: 400;
+    color: var(--white);
+    text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.07);
+}
+
+body {
+    background-color: var(--dark);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h4 {
+    margin: 0 0 7px 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.opened {
+    display: inherit;
+}
+
+.closed {
+    display: none;
+}
+
+.mb {
+    margin-bottom: 35px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+}
+
+.content {
+    align-self: center;
+    justify-self: center;
+    min-width: 50%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 320px) {
+    .brand {
+        font-size: 1.3rem;
+    }
+
+    .brand-logo {
+        margin-right: 6px;
+    }
+
+    .domain {
+        font-size: 0.8rem;
+    }
+
+    .tech-logo {
+        height: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .brand {
+        font-size: 1.7rem;
+    }
+
+    .brand-logo {
+        margin-right: 8px;
+    }
+
+    .domain {
+        font-size: 1rem;
+    }
+
+    .tech-logo {
+        height: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .brand {
+        font-size: 2.4rem;
+    }
+
+    .brand-logo {
+        margin-right: 10px;
+    }
+
+    .domain {
+        font-size: 1.25rem;
+    }
+
+    .tech-logo {
+        height: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .brand {
+        font-size: 2.8rem;
+    }
+
+    .brand-logo {
+        margin-right: 10px;
+    }
+
+    .domain {
+        font-size: 1.3rem;
+    }
+
+    .tech-logo {
+        height: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .brand {
+        font-size: 3.6rem;
+    }
+
+    .brand-logo {
+        margin-right: 15px;
+    }
+
+    .domain {
+        font-size: 1.5rem;
+    }
+
+    .tech-logo {
+        height: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .brand {
+        font-size: 4rem;
+    }
+
+    .brand-logo {
+        margin-right: 20px;
+    }
+
+    .domain {
+        font-size: 1.7rem;
+    }
+
+    .tech-logo {
+        height: 2.4rem;
+    }
+}
+
+.customer-logo {
+    width: 7rem;
+}
+
+p,
+.glist,
+.muted {
+    color: var(--grey);
+    font-size: 0.9em;
+}
+
+.brand-logo,
+.icon {
+    width: 1em;
+}
+
+.icon.big {
+    width: 1.5em;
+}
+
+.tech-logo,
+.customer-logo.netia {
+    padding: 3px;
+    background-color: var(--white);
+}
+
+.tech-header {
+    width: 5rem;
+}
+
+.tech-header.small {
+    width: 1.5rem;
+}
+
+.glist {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.glist.references {
+    grid-template-rows: 5rem;
+}
+
+.glist.legal {
+    grid-column-gap: 20px;
+    grid-row-gap: 4px;
+}
+
+.techs {
+    padding: 7px;
+}
+
+.brand {
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.domain {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.menu-btn {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--button-width), 1fr));
+}
+
+.btn {
+    border: solid 1px var(--white);
+    padding: 14px;
+    text-align: center;
+}
+
+.btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn.fixed-size {
+    width: var(--button-width);
+}

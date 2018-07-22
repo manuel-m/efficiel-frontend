@@ -1,0 +1,77 @@
+.home--page {
+    padding: var(--pad);
+    display: grid;
+    grid-template-rows: 20rem;
+    grid-template-areas:
+        'l l'
+        'a b'
+        'a b'
+        'a c'
+        'd c'
+        'd c';
+}
+
+.home--card {
+    padding: var(--pad);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: var(--bs1);
+}
+
+.home--card.brand {
+    grid-area: l;
+    display: grid;
+    background-image: linear-gradient(
+            to top,
+            rgba(29, 19, 9, 0.7),
+            rgba(29, 19, 9, 0.7)
+        ),
+        url('../landing.jpg');
+    align-items: center;
+    justify-items: center;
+}
+
+.home--card > p {
+    max-width: calc(50vw - 3rem);
+    color: var(--c6);
+}
+
+.home--card.txt {
+    display: grid;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-items: center;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.home--card.a {
+    grid-area: a;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('./assets/resto1.jpg');
+}
+
+.home--card.b {
+    grid-area: b;
+    background-image: url('./assets/resto2.jpg');
+}
+
+.home--card.c {
+    grid-area: c;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('./assets/cremecatalane.jpg');
+}
+
+.home--card.d {
+    grid-area: d;
+    background-image: url('./assets/tapas.jpg');
+}
