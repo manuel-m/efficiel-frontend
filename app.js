@@ -34,5 +34,5 @@
     }
 })({
     bodyStyle:
-        "background-image: linear-gradient(to top,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./assets/img/bgetdark.jpg');background-size: cover;"
+        "background-image: linear-gradient(to top,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('img/bgetdark.jpg');background-size: cover;"
 });
