@@ -1,8 +1,9 @@
-@import '../../css/reset.css';
-@import './assets/css/base.css';
-@import './assets/css/navbar.css';
-@import './assets/css/home.css';
-@import './assets/css/plats.css';
+@import '/css/reset.css';
+@import '/apps/basic/css/base.css';
+@import '/apps/basic/css/navbar.css';
+
+@import '/apps/basic/css/home.css';
+@import '/apps/basic/css/plats.css';
 
 @media screen and (min-width: 321px) {
     .home--page {

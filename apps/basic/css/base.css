@@ -7,6 +7,12 @@
     --c6: #eee;
 
     --pad: 0.7rem;
+
+    --gradient: linear-gradient(
+        to top,
+        rgba(29, 19, 9, 0.8),
+        rgba(29, 19, 9, 0.8)
+    );
 }
 
 body {

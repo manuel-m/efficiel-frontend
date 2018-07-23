@@ -6,6 +6,7 @@
     "scripts": {
         "js": "rollup -c -w",
         "start": "browser-sync start --server --files '**/*.css, '**/app.js, '**/index.html' --directory --port 7777",
+        "dist": "./node_modules/.bin/cleancss -O2 --inline all apps/basic/app.css > apps/basic/app.min.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -14,6 +15,7 @@
         "browser-sync": "^2.24.5"
     },
     "devDependencies": {
+        "clean-css-cli": "^4.1.11",
         "rollup": "^0.63.2",
         "rollup-watch": "^4.3.1"
     }

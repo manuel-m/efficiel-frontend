@@ -21,12 +21,7 @@
 .home--card.brand {
     grid-area: l;
     display: grid;
-    background-image: linear-gradient(
-            to top,
-            rgba(29, 19, 9, 0.7),
-            rgba(29, 19, 9, 0.7)
-        ),
-        url('../landing.jpg');
+    background-image: var(--gradient), url('/apps/basic/img/landing.jpg');
     align-items: center;
     justify-items: center;
 }
@@ -48,30 +43,20 @@
 
 .home--card.a {
     grid-area: a;
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
-        ),
-        url('../resto1.jpg');
+    background-image: var(--gradient), url('/apps/basic/img/resto1.jpg');
 }
 
 .home--card.b {
     grid-area: b;
-    background-image: url('../resto2.jpg');
+    background-image: url('/apps/basic/img/resto2.jpg');
 }
 
 .home--card.c {
     grid-area: c;
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
-        ),
-        url('../cremecatalane.jpg');
+    background-image: var(--gradient), url('/apps/basic/img/cremecatalane.jpg');
 }
 
 .home--card.d {
     grid-area: d;
-    background-image: url('../tapas.jpg');
+    background-image: url('/apps/basic/img/tapas.jpg');
 }
