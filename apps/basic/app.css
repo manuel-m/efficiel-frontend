@@ -25,10 +25,7 @@
 
     .plats--page {
         grid-template-columns: 1fr;
-        grid-template-areas:
-            'l'
-            'f'
-            'c';
+        grid-template-areas: 'l' 'f' 'c' 'b' 'vb' 'vr';
     }
 }
 
@@ -59,7 +56,9 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'l l'
-            'f c';
+            'f c'
+            'b b'
+            'vb vr';
     }
 }
 

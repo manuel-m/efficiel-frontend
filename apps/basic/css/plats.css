@@ -10,21 +10,32 @@
 .plats--page h4 {
     text-align: center;
     color: #fff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .plats--page ul {
     font-size: 1rem;
 }
 
-.tapas-title {
-    grid-area: l;
-    background-image: var(--gradient), url('/apps/basic/img/pan-con-tomate.jpg');
-
+.tapas-title,
+.boissons-title {
     display: grid;
     align-items: center;
     justify-items: center;
     color: var(--c4);
     font-size: 2.5rem;
+}
+
+.tapas-title {
+    grid-area: l;
+    background-image: var(--gradient), url('/apps/basic/img/pan-con-tomate.jpg');
+}
+
+.boissons-title {
+    grid-area: b;
+    background-image: var(--gradient), url('/apps/basic/img/pan-con-tomate.jpg');
+    height: 6rem;
 }
 
 .tapas-froides {
@@ -43,4 +54,39 @@
     border-radius: 3px;
     color: var(--c5);
     background-size: cover;
+}
+
+.vins {
+    padding: var(--pad);
+    background-size: cover;
+}
+
+.vins.blanc {
+    grid-area: vb;
+    background-image: var(--gradient), url('/apps/basic/img/vins1.jpg');
+}
+
+.vins.rouge {
+    grid-area: vr;
+    background-image: var(--gradient), url('/apps/basic/img/vins1.jpg');
+}
+
+.appelation {
+    color: var(--c5);
+    font-size: 0.9rem;
+    margin-top: var(--pad);
+}
+
+.vins-list {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.vins-list * {
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+}
+
+.vins-list span {
+    float: right;
 }
