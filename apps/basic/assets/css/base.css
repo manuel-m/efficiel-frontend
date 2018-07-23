@@ -31,15 +31,6 @@ ul {
     margin-bottom: var(--pad);
 }
 
-.nav--menu {
-    font-size: 1.2rem;
-    display: grid;
-    grid-gap: 5px;
-    background-color: var(--c2);
-    padding: var(--pad);
-    box-shadow: var(--bs1);
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -57,28 +48,7 @@ ul {
     display: inherit;
 }
 
-.menu.toggle {
-    height: 1.5rem;
-}
-
 .wrapper {
     max-width: 1100px;
     margin: auto;
-}
-
-.nav--menu-spacing {
-    margin-top: 3rem;
-}
-
-.nav--menu {
-    grid-template-columns: 50px 1fr;
-}
-
-.nav--menu-item {
-    display: none;
-}
-
-/* keep home button visible */
-[data-nav='home'].nav--menu-item {
-    display: inherit;
 }

@@ -1,0 +1,53 @@
+#navbar--menu {
+    font-size: 1.2rem;
+    display: grid;
+    grid-gap: 5px;
+    background-color: var(--c2);
+    padding: var(--pad);
+    box-shadow: var(--bs1);
+}
+
+#navbar--toggle {
+    height: 1.5rem;
+}
+
+#navbar--close {
+    width: 1.5rem;
+    display: none;
+    position: fixed;
+    top: var(--pad);
+    right: var(--pad);
+}
+
+/* show only when navbar menu is expanded */
+#navbar--menu.expanded #navbar--close {
+    display: inherit;
+}
+
+#navbar--menu-spacing {
+    margin-top: 3rem;
+}
+
+#navbar--menu-spacing.expanded {
+    margin-top: 11rem;
+}
+
+#navbar--menu {
+    grid-template-columns: 50px 1fr;
+}
+
+#navbar--menu.expanded {
+    grid-template-columns: 1fr;
+    line-height: 3rem;
+}
+
+#navbar--menu.expanded #navbar--toggle,
+.navbar--menu-item {
+    display: none;
+}
+
+/* keep home button visible */
+#navbar--menu.expanded .navbar--menu-item,
+[data-nav='home'].navbar--menu-item {
+    display: inherit;
+}

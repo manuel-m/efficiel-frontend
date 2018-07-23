@@ -53,12 +53,12 @@
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)
         ),
-        url('./assets/resto1.jpg');
+        url('../resto1.jpg');
 }
 
 .home--card.b {
     grid-area: b;
-    background-image: url('./assets/resto2.jpg');
+    background-image: url('../resto2.jpg');
 }
 
 .home--card.c {
@@ -68,10 +68,10 @@
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)
         ),
-        url('./assets/cremecatalane.jpg');
+        url('../cremecatalane.jpg');
 }
 
 .home--card.d {
     grid-area: d;
-    background-image: url('./assets/tapas.jpg');
+    background-image: url('../tapas.jpg');
 }

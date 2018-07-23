@@ -1,5 +1,6 @@
 @import '../../css/reset.css';
 @import './assets/css/base.css';
+@import './assets/css/navbar.css';
 @import './assets/css/home.css';
 @import './assets/css/plats.css';
 
@@ -65,12 +66,12 @@
     .home--page {
         grid-gap: 20px;
     }
-    .nav--menu {
+    #navbar--menu {
         align-items: center;
         justify-items: center;
         grid-template-columns: 50px repeat(auto-fit, minmax(150px, 1fr));
     }
-    .nav--menu-item {
+    .navbar--menu-item {
         display: inherit;
     }
 
@@ -99,34 +100,8 @@
     .home--card > h4 {
         font-size: 1.6rem;
     }
-}
 
-.home--card.a {
-    grid-area: a;
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
-        ),
-        url('./assets/resto1.jpg');
-}
-
-.home--card.b {
-    grid-area: b;
-    background-image: url('./assets/resto2.jpg');
-}
-
-.home--card.c {
-    grid-area: c;
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
-        ),
-        url('./assets/cremecatalane.jpg');
-}
-
-.home--card.d {
-    grid-area: d;
-    background-image: url('./assets/tapas.jpg');
+    .plats--page {
+        padding: var(--pad) 0 0 0;
+    }
 }

@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>La casita</title>
+    <title>Restaurant la Casita</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div>
             <div class="stick">
-                <div class="nav--menu">
-                    <img src="assets/menu-button-of-three-horizontal-lines.svg" class="menu toggle">
-                    <div class="nav--menu-item" data-nav="home">Restaurant La Casita</div>
-                    <div class="nav--menu-item" data-nav="plats">La carte</div>
-                    <div class="nav--menu-item" data-nav="book">Réservation</div>
+                <div id="navbar--menu">
+                    <img src="assets/menu-lines.svg" id="navbar--toggle">
+                    <div class="navbar--menu-item" data-nav="home">Restaurant La Casita</div>
+                    <div class="navbar--menu-item" data-nav="plats">La carte</div>
+                    <div class="navbar--menu-item" data-nav="book">Réservation</div>
+
+                    <div id="navbar--close">
+                        <img src="../../assets/icons/cancel.svg">
+                    </div>
+
                 </div>
             </div>
+            <div id="navbar--menu-spacing"></div>
 
-            <div id="page-container" class="nav--menu-spacing">
+            <div id="page-container">
 
                 <!-- plats -->
                 <div data-page="plats">

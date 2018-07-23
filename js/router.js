@@ -27,11 +27,9 @@ export default {
 
         // nav listeners
         Array.from(document.querySelectorAll('[data-nav]')).forEach(el_ => {
-            el_.addEventListener('click', function() {
+            el_.addEventListener('click', () => {
                 _nav(el_.dataset.nav);
             });
         });
-
-        console.log(_page, _pages);
     }
 };
