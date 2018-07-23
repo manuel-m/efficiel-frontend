@@ -7,7 +7,8 @@ let _breakpoint_px = 0,
     _expanded = false;
 
 export default {
-    init: _navBarInit
+    init: _navBarInit,
+    forceShrink: _navBarForceShrink
 };
 
 function _navBarInit(in_) {

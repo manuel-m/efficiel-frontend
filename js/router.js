@@ -1,4 +1,5 @@
-let _page = 'home',
+let _onAfterNav,
+    _page = 'home',
     _pages = Array.from(document.querySelectorAll('[data-page]')).reduce(
         (pages_, page_) => {
             pages_[page_.dataset.page] = page_;
@@ -8,14 +9,23 @@ let _page = 'home',
     );
 
 function _nav(page_) {
-    if (page_ === _page) return;
-    _pages[_page].classList.remove('active');
-    _page = page_;
-    _pages[_page].classList.add('active');
+    if (page_ !== _page) {
+        _pages[_page].classList.remove('active');
+        _page = page_;
+        _pages[_page].classList.add('active');
+    }
+
+    if (_onAfterNav !== undefined) {
+        _onAfterNav();
+    }
 }
 
 export default {
-    init() {
+    init(onAfterNav_) {
+        if (onAfterNav_ !== undefined) {
+            _onAfterNav = onAfterNav_;
+        }
+
         // page display toggle
         _pages = Array.from(document.querySelectorAll('[data-page]')).reduce(
             (pages_, page_) => {
