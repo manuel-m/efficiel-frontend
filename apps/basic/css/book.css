@@ -1,0 +1,62 @@
+.book--page {
+    padding: var(--pad);
+    background: #fff;
+}
+
+.book--page .title {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: calc(2 * var(--pad));
+    margin-top: calc(1.5 * var(--pad));
+}
+
+.book--page .sub-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: calc(2 * var(--pad));
+}
+
+.book--page .location > * {
+    font-weight: 100;
+    font-size: 0.9em;
+    color: var(--c3);
+}
+
+.book--page .opening-time {
+    font-weight: 600;
+    margin-top: calc(2 * var(--pad));
+}
+
+.book--page form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: var(--pad);
+    margin-left: var(--pad);
+    margin-right: var(--pad);
+    padding-bottom: calc(5 * var(--pad));
+}
+
+.book--page form input,
+.book--page form textarea {
+    width: 100%;
+    border: 1.6px solid #000;
+    padding: calc(0.6 * var(--pad));
+    border-radius: 0;
+}
+
+.book--page form label {
+    display: block;
+    font-size: 0.8em;
+    color: var(--c3);
+    margin-top: calc(var(--pad));
+}
+
+.book--page .submit-button {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    text-transform: uppercase;
+    padding: var(--pad);
+    font-size: 0.9rem;
+}

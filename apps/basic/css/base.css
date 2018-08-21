@@ -58,3 +58,11 @@ ul {
     max-width: 1100px;
     margin: auto;
 }
+
+.sp2 {
+    grid-column: span 2;
+}
+
+.spall {
+    grid-column: 1 / -1;
+}
