@@ -3,13 +3,13 @@ var fs = require('fs-extra');
 // root site
 fs.emptyDirSync('dist');
 
-['app.js', 'img', 'icons', 'index.html', 'style.css'].forEach(src_ => {
-    fs.copySync(src_, 'dist/' + src_);
-});
+_copyDist('.', ['app.js', 'img', 'icons', 'index.html', 'style.css']);
 
-// casita site
-fs.emptyDirSync('dist/apps/casita');
+_copyDist('apps/casita', ['index.html', 'app.min.css', 'app.js', 'img']);
 
-['index.html', 'app.min.css', 'app.js', 'img'].forEach(src_ => {
-    fs.copySync('apps/casita/' + src_, 'dist/apps/casita/' + src_);
-});
+function _copyDist(root_, files_) {
+    fs.emptyDirSync('dist/' + root_);
+    files_.forEach(src_ => {
+        fs.copySync(root_ + '/' + src_, 'dist/' + root_ + '/' + src_);
+    });
+}
