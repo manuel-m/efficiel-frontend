@@ -27,7 +27,8 @@
     }
 
     const _navBarMenu = document.getElementById('navbar--menu'),
-        _navBarMenuSpacing = document.getElementById('navbar--menu-spacing');
+        _navBarMenuSpacing = document.getElementById('navbar--menu-spacing'),
+        _navBarToggle = document.getElementById('navbar--toggle');
 
     let _breakpoint_px = 0,
         _expanded = false;
@@ -41,24 +42,22 @@
         if (in_ !== undefined && 'breakpoint_px' in in_) {
             _breakpoint_px = in_.breakpoint_px;
         }
+
         resize.register(_navBarForceShrink);
 
-        document
-            .getElementById('navbar--toggle')
-            .addEventListener('click', _navBarExpandToggle);
+        _navBarToggle.addEventListener('click', _navBarExpandToggle);
 
         document
             .getElementById('navbar--close')
             .addEventListener('click', _navBarForceShrink);
+
+        _navBarShowHideToggle();
     }
 
     function _navBarExpandToggle(e_) {
-        if (window.innerWidth > _breakpoint_px) {
-            // No menu toggle on large screens
-            return;
-        }
         _expanded = !_expanded;
         (_expanded === true ? _navBarExpand : _navBarShrink)();
+        _navBarShowHideToggle();
     }
 
     function _navBarExpand() {
@@ -76,6 +75,14 @@
             _expanded = false;
             _navBarShrink();
         }
+        _navBarShowHideToggle();
+    }
+
+    function _navBarShowHideToggle() {
+        _navBarToggle.style.display =
+            _expanded === true || window.innerWidth > _breakpoint_px
+                ? 'none'
+                : 'block';
     }
 
     let _onAfterNav,

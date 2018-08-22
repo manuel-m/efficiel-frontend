@@ -1,3 +1,3 @@
-import basic from './apps/basic/rollup.config.js';
+import casita from './apps/casita/rollup.config.js';
 
-export default [basic];
+export default [casita];

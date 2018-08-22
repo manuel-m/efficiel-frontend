@@ -29,23 +29,25 @@
 
 .tapas-title {
     grid-area: l;
-    background-image: var(--gradient), url('/apps/basic/img/pan-con-tomate.jpg');
+    background-image: var(--gradient),
+        url('/apps/casita/img/pan-con-tomate.jpg');
 }
 
 .boissons-title {
     grid-area: b;
-    background-image: var(--gradient), url('/apps/basic/img/pan-con-tomate.jpg');
+    background-image: var(--gradient),
+        url('/apps/casita/img/pan-con-tomate.jpg');
     height: 6rem;
 }
 
 .tapas-froides {
     grid-area: f;
-    background-image: var(--gradient), url('/apps/basic/img/tapastall1.jpg');
+    background-image: var(--gradient), url('/apps/casita/img/tapastall1.jpg');
 }
 
 .tapas-chaudes {
     grid-area: c;
-    background-image: var(--gradient), url('/apps/basic/img/tapashot.jpg');
+    background-image: var(--gradient), url('/apps/casita/img/tapashot.jpg');
 }
 
 .tapas-froides,
@@ -63,12 +65,12 @@
 
 .vins.blanc {
     grid-area: vb;
-    background-image: var(--gradient), url('/apps/basic/img/vins1.jpg');
+    background-image: var(--gradient), url('/apps/casita/img/vins1.jpg');
 }
 
 .vins.rouge {
     grid-area: vr;
-    background-image: var(--gradient), url('/apps/basic/img/vins1.jpg');
+    background-image: var(--gradient), url('/apps/casita/img/vins1.jpg');
 }
 
 .appelation {

@@ -1,10 +1,10 @@
 @import '/css/reset.css';
-@import '/apps/basic/css/base.css';
-@import '/apps/basic/css/navbar.css';
+@import '/apps/casita/css/base.css';
+@import '/apps/casita/css/navbar.css';
 
-@import '/apps/basic/css/book.css';
-@import '/apps/basic/css/home.css';
-@import '/apps/basic/css/plats.css';
+@import '/apps/casita/css/book.css';
+@import '/apps/casita/css/home.css';
+@import '/apps/casita/css/plats.css';
 
 @media screen and (min-width: 321px) {
     .home--page {
@@ -68,9 +68,7 @@
         grid-gap: 20px;
     }
     #navbar--menu {
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: 50px repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .navbar--menu-item {
         display: inherit;

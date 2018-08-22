@@ -1,7 +1,7 @@
 export default {
-    input: 'apps/basic/js/index.js',
+    input: 'apps/casita/js/index.js',
     output: {
-        file: 'apps/basic/app.js',
+        file: 'apps/casita/app.js',
         format: 'iife'
     },
     plugins: []

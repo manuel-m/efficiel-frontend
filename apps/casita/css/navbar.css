@@ -5,6 +5,10 @@
     background-color: var(--c2);
     padding: var(--pad);
     box-shadow: var(--bs1);
+
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 50px repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #navbar--toggle {
