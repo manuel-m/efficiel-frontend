@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJs01</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="root"><input type="text" id="id" v-model="newTask">
+
+        <button :class="colorClass" :title="buttonTitle" @click="addTask">Add task</button>
+        <h1>All tasks</h1>
+        <ul>
+            <li v-for="(task, index) in tasks">{{task.desc}}<button @click="completeTask(index)">Done</button></li>
+        </ul>
+        <h1>Incompleted tasks</h1>
+        <ul>
+            <task-item v-for="task in incompletedTasks">{{task.desc}}</task-item>
+        </ul>
+        <h1>Tasks List</h1>
+        <task-list></task-list>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>

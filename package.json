@@ -7,7 +7,8 @@
         "casita:css": "./node_modules/.bin/cleancss -O2 --inline all apps/casita/app.css > apps/casita/app.min.css",
         "casita": "npm run casita:css",
         "dist": "rollup -c && npm run casita && node ./deliver.js",
-        "js": "rollup -c -w",
+        "js": "cross-env NODE_ENV=production rollup -c -w",
+        "js:debug": "rollup -c -w",
         "start": "browser-sync start --server --files '**/*.css, '**/app.js, '**/index.html' --directory --port 7777",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -18,8 +19,13 @@
     },
     "devDependencies": {
         "clean-css-cli": "^4.1.11",
+        "cross-env": "^5.2.0",
         "node-fs-extra": "^0.8.2",
         "rollup": "^0.63.2",
-        "rollup-watch": "^4.3.1"
+        "rollup-plugin-uglify": "^4.0.0",
+        "rollup-plugin-uglify-es": "0.0.1",
+        "rollup-plugin-vue": "^4.3.2",
+        "rollup-watch": "^4.3.1",
+        "vue-template-compiler": "^2.5.17"
     }
 }
