@@ -1,9 +1,9 @@
 <template>
 <div class="date-picker">
     <div class="nav">
-        <div class="nav-month">{{ `${monthlabel} ${year}` }}</div>
-        <div class="nav-prev">&lt;</div>
-        <div class="nav-next">&gt;</div>
+        <div class="nav-month">{{ `${m.monthlabel} ${m.year}` }}</div>
+        <div class="nav-prev" @click.prevent="monthPrev">&lt;</div>
+        <div class="nav-next" @click.prevent="monthNext">&gt;</div>
     </div>
     <div class="matrix">
         <!-- DLMMJVS -->
@@ -13,8 +13,8 @@
         <!-- Matrix : 6 x 7 colums (weeks days) -->
         <div class="row" v-for="row_n in 6" :key="row_n">
             <div v-for="n in 7" :key="n" 
-                :class="'item '+days[(n - 1)+((row_n - 1)*7)].className">
-                    {{days[(n - 1)+((row_n - 1)*7)].label}}
+                :class="'item '+m.days[(n - 1)+((row_n - 1)*7)].className">
+                    {{m.days[(n - 1)+((row_n - 1)*7)].label}}
             </div>
         </div>
     </div>
@@ -22,15 +22,23 @@
 </template>
 
 <script>
-import { DatePicker, DatePickerProto } from './datem.js';
+import datePicker from './datePicker';
 export default {
     created() {
-        Object.assign(this, DatePicker({ month: this.month, year: this.year }));
+        this.m = datePicker.sync({ month: this.month, year: this.year });
     },
-    props: { month: Number, year: Number },
     data() {
-        return DatePickerProto();
-    }
+        return { m: datePicker.proto() };
+    },
+    methods: {
+        monthNext() {
+            this.m = datePicker.sync(datePicker.monthNext(this.m));
+        },
+        monthPrev() {
+            this.m = datePicker.sync(datePicker.monthPrev(this.m));
+        }
+    },
+    props: { month: Number, year: Number }
 };
 </script>
 
@@ -71,12 +79,9 @@ export default {
     padding: 0.3rem;
 }
 
+.day,
 .item.before,
 .item.after {
-    opacity: 0.25;
-}
-
-.day {
     opacity: 0.25;
 }
 </style>

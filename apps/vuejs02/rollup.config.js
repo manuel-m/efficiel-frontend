@@ -8,6 +8,7 @@ const _plugins =
         : [
               vue(),
               uglify({
+                  compress: false,
                   mangle: false,
                   output: { beautify: true }
               })
